@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "d1d0f82b-4713-447f-b1b7-1605d6affac2",
+		"name": "Test1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateBill",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"UserId\": \"9D1B793A-EF08-474B-907D-FFB80691AADC\",\r\n  \"ProductIds\": [\r\n    \"67E39D74-0086-4C3D-96E2-0FB9F34070F0\",\"48D639BA-3C13-4F41-B16C-308360EBEF4C\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44393/api/bill/createbill",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44393",
+					"path": [
+						"api",
+						"bill",
+						"createbill"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBills",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44393/api/bill/GetBills",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44393",
+					"path": [
+						"api",
+						"bill",
+						"GetBills"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserBills",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44393/api/Bill/GetUserBills/A3E5E7B6-BA05-493C-A63D-5F1EE641D361",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44393",
+					"path": [
+						"api",
+						"Bill",
+						"GetUserBills",
+						"A3E5E7B6-BA05-493C-A63D-5F1EE641D361"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetFinalAmount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44393/api/Bill/GetFinalBillAmount9A195644-055D-464D-1ACD-08DB8EB8DBB8",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44393",
+					"path": [
+						"api",
+						"Bill",
+						"GetFinalBillAmount9A195644-055D-464D-1ACD-08DB8EB8DBB8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBillDetail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44393/api/Bill/GetBillDetail/{A3E5E7B6-BA05-493C-A63D-5F1EE641D361}/{0DC61796-E917-4F69-55D6-08DB8E4113FB}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44393",
+					"path": [
+						"api",
+						"Bill",
+						"GetBillDetail",
+						"{A3E5E7B6-BA05-493C-A63D-5F1EE641D361}",
+						"{0DC61796-E917-4F69-55D6-08DB8E4113FB}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
